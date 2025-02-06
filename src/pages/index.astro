@@ -1,11 +1,97 @@
 ---
-import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
-
+import "../styles/global.css";
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
 // Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
+<style>
+	.bg-16024d {
+    background: rgb(83,25,238);
+    background: linear-gradient(90deg, rgba(83,25,238,1) 0%, rgba(47,10,88,1) 100%); 
+  	}
+ 	a:hover {
+	color: #535bf2;
+	}
+	.aa	{
+		color: #535bf2;
+	}
+</style>
+<script src="/redirect.js" is:inline></script>
+<body class="bg-16024d">
+	<div>
+		<section >
+			<div class="flex-col flex h-screen w-screen ">
+				<div class="basis-1/3"></div>
+				<div class="basis-1/3 items-center justify-center">
+					<div>
+						<p class="text-8xl flex items-center justify-center font-bold text-white">David</p>
+						<p class="text-6xl flex items-center justify-center font-bold text-white">Student</p>
+					</div>
+					<div class="flex flex-warp pt-4 gap-2 justify-center">
+						<p class="flex items-center rounded-full bg-yellow-500 p-6 text-4xl font-bold leading-5 text-black">Javascript</p>
+						<p class="flex items-center rounded-full bg-red-600 p-6 text-4xl font-bold leading-5 ">HTML</p>
+						<p class="flex items-center rounded-full bg-blue-700 p-6 text-4xl font-bold leading-5 ">CSS</p>
+						<p class="flex items-center rounded-full bg-white p-6 text-4xl font-bold leading-5 text-black">Java</p>
+						<p class="flex items-center rounded-full bg-blue-600 p-6 text-4xl font-bold leading-5 text-white">Python</p>
+					</div>
+				</div>
+				<div class="basis-1/3"></div>
 
-<Layout>
-	<Welcome />
-</Layout>
+			</div>
+		</section>
+		<section class="h-screen w-screen">
+				<div class="items-center justify-center">
+					<div><h2 class="text-6xl flex items-center justify-center font-bold text-white">Projects</h2></div>
+				</div>
+					<div class="justify-center mt-32 p-8">
+							<div>
+								<h3 class="text-white text-4xl font-bold">GeForceNow Hardware Information</h3>
+							</div>
+							<span class="p-1.5"></span>
+							<div>
+								<p class="text-white text-3xl">Website which displayed the hardware specifications for the servers used by the NVIDIA GeForce Now Service.</p>
+							</div>
+							<span class="p-1.5"></span>
+							<div class="flex items-start">
+							<img src="/src/assets/gfn_rigs.png" width="400" height="48" class="rounded-lg border-white border-3">
+						</div>
+					</div>
+					<div class="justify-center mt-32 p-8">
+						<div>
+							<h3 class="text-white text-4xl font-bold">Dimension Date Lock</h3>
+						</div>
+						<span class="p-1.5"></span>
+						<div>
+							<p class="text-white text-3xl">Minecraft Plugin which allows administrators to lock the different vanilla dimensions until a specified date and hour.</p>
+						</div>
+						<span class="p-1.5"></span>
+						<div class="flex items-start">
+							<img src="/src/assets/dimension_lock.png" width="400" height="48" class="rounded-lg border-white border-3">
+						</div>
+					</div>
+					<div class="justify-center mt-32 p-8">
+						<div>
+							<h3 class="text-white text-4xl font-bold">Contact me!</h3>
+						</div>
+						<span class="p-1.5"></span>
+						<div>
+							<p class="text-white text-3xl">Help me add more..</p>
+						</div>
+						<span class="p-1.5"></span>
+						<div class="flex items-start">
+						<img src="/src/assets/newproject.png" width="400" height="48" class="rounded-lg border-white border-3">
+						</div>
+					</div>
+		</section>
+		<section>
+			<div class="flex flex-col w-screen h-screen">
+				<div class="flex basis-1/3"></div>
+				<div class="flex basis-1/3">
+					<h1 class="text-8xl text-white font-bold text-center">If you wish to contact me, <a class="aa" href="mailto:david@free3.org">click here.</a></h1>
+				</div>
+				<div class="flex basis-1/3 items-end justify-center pb-4">
+					<p class="text-white text-xl">developed using <a href="astro.build">astro.build</a> and <a href="tailwindcss.com">tailwind.css</a></p>
+				</div>
+			</div>
+		</section>
+	</div>
+</body>
