@@ -14,7 +14,14 @@ import "../pages/build.css";
 		color: #535bf2;
 	}
 </style>
-<script src="/redirect.js" is:inline></script>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent) || window.innerWidth < 768;
+    if (isMobile) {
+      alert("Warning: If you wish to read an About Me, as well as have links to my Instagram and GitHub Profile, please view this on a desktop device.");
+    }
+  });
+</script>
 <body class="bg-16024d">
 	<div>
 		<section >
